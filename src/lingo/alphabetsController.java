@@ -32,8 +32,8 @@ public class alphabetsController {
     }
    /// private ArrayInit
     private void intilizeMap(){
-         Alphabet node[] = new Alphabet[28] ; 
-         
+         Alphabet node[] = new Alphabet[29] ; 
+        
 //         for (int i = 1; i < 4; i++){
 //             String n = ""+ i; 
 //             node[i] = new Alphabet(n);
@@ -42,24 +42,32 @@ public class alphabetsController {
 //             node[i].getAudioMP3(n); 
 //         
 //         }
-         
-        for (int i = 1; i < node.length; i++){
-            int m = i; 
-            String n = ""+ i; 
+         int l = 1; 
+         System.err.println("node.length: "+node.length);
+        for (int i = 1; i < node.length; i++)
+        {
+            //int m = i; 
+           
+           /// if (i != 0)
+            { 
+                String n = ""+ i; 
             node[i]  = new Alphabet(n);
-            System.out.println("i: "+i+ " node[i]: "+node[i].nameGetter());
+           /// System.out.println("i: "+l++ + " node[i]: "+node[i].nameGetter());
             //if (i != 10 || i != 11)
             {
             node[i].imageGetter(n); 
             
             node[i].getAudioMP3(n); 
             alphaMap.put(n, node[i]); 
+            }
             
             }
            
          
         
         }
+        System.out.println("map Si: "+ alphaMap.size());
+        System.out.println("28: "+ alphaMap.get("28").name);
     
     }
     
@@ -82,6 +90,9 @@ public class alphabetsController {
 //       }
 alphPanel pan = new alphPanel(alphaMap);
        MainFrame frame = new MainFrame(pan);
+       
+        System.out.println("map size: "+alphaMap.size() );
+        
        
        /// JScrollPane scroll = new JScrollPane(pan);
         ///scroll.setVisible( rootPaneCheckingEnabled);

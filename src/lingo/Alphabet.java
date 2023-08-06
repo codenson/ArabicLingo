@@ -66,24 +66,40 @@ public class Alphabet {
     return this.alphabetName; 
     }
     
+    public ImageIcon imageGetter() {
+        BufferedImage img = null;
+        String s = "C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
+        s += this.name + ".png";
+        /// System.out.println("lingo.Alphabet.imageGetter()"+ s);
+
+        try {
+            img = ImageIO.read(new File(s));
+        } catch (IOException e) {
+            System.err.println("not");;
+        }
+
+        return new ImageIcon(img);
+    }
+    
     /**
      * method to load an  image from the file. 
      * @return alphabet image to be used for display. 
      */
-    public ImageIcon  imageGetter(String name){
+    public ImageIcon imageGetter(String name) {
         BufferedImage img = null;
-        String s="C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
-        s+=  name+ ".png"; 
-       /// System.out.println("lingo.Alphabet.imageGetter()"+ s);
-      
-        
-try {
-    img = ImageIO.read(new File(s));
-} catch (IOException e) {
-}
-        
-        return  new ImageIcon(img);
+        String s = "C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
+        s += name + ".png";
+        /// System.out.println("lingo.Alphabet.imageGetter()"+ s);
+
+        try {
+            img = ImageIO.read(new File(s));
+        } catch (IOException e) {
+            System.err.println("not");;
+        }
+
+        return new ImageIcon(img);
     }
+    
     
     /**
      * Method to retrieve MP3 audio file off the path and plays an alphabet audio. 
