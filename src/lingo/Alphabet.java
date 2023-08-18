@@ -68,9 +68,16 @@ public class Alphabet {
     
     public ImageIcon imageGetter() {
         BufferedImage img = null;
-        String s = "C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
-        s += this.name + ".png";
-        /// System.out.println("lingo.Alphabet.imageGetter()"+ s);
+      //  String s = "C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
+       // s += this.name + ".png";
+        String s= ""; 
+         String relativePath = "src/lingo/Images/";
+         String userDir = System.getProperty("user.dir");
+         String absolutePath = userDir + File.separator + relativePath;
+         s+= absolutePath; 
+         
+        s += name + ".png";
+       /// System.out.println("lingo.Alphabet.imageGetter(): "+ name);
 
         try {
             img = ImageIO.read(new File(s));
@@ -87,7 +94,13 @@ public class Alphabet {
      */
     public ImageIcon imageGetter(String name) {
         BufferedImage img = null;
-        String s = "C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
+        ///String s = "C:\\Users\\guero\\OneDrive\\Documents\\NetBeansProjects\\Lingo\\src\\lingo\\Images\\";
+        String s= ""; 
+         String relativePath = "src/lingo/Images/";
+         String userDir = System.getProperty("user.dir");
+         String absolutePath = userDir + File.separator + relativePath;
+         s+= absolutePath; 
+         
         s += name + ".png";
         /// System.out.println("lingo.Alphabet.imageGetter()"+ s);
 

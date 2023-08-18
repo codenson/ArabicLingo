@@ -27,28 +27,25 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         ///JPanel pan = pan; 
         
-         JScrollPane scroll = new JScrollPane(pan);
-//         scroll.setPreferredSize(new Dimension(600, 600));
-//         
-//          setContentPane(scroll);
-//
-//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        pack(); // Automatically resize the frame to fit the content
-//        setLocationRelativeTo(null); // Center the frame on the screen
-//        setVisible(true);
-
-      ///  JScrollPane scroll = new JScrollPane(pan);
-        scroll.setVisible(true);
-        scroll.setPreferredSize(new Dimension(600, 600));
-        setContentPane(pan);
         
-        ///setSize(800, 400);
-        ////scroll.setPreferredSize(new Dimension(600, 600));
+         JScrollPane scroll = new JScrollPane(pan);
+         
+         int x = scroll.getSize().height; 
+         int y  = scroll.getSize().width;
+         Dimension dem =pan.getSize(); /// new Dimension(x,y);
+
+         scroll.setPreferredSize(new Dimension(600,500)); 
+         ///scroll.get
+       /// scroll.setPreferredSize(new Dimension(1100, 800));
+//         
+            setContentPane(scroll);
+//
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        pack();
-        setLocationRelativeTo(null); 
-       /// scroll.setVisible(rootPaneCheckingEnabled);
-        this.setVisible(rootPaneCheckingEnabled);
+        pack(); // Automatically resize the frame to fit the content
+        setLocationRelativeTo(null); // Center the frame on the screen
+        setVisible(true);
+
+      
     }
     public void setPanel(JPanel pan){
         ///this.panel = pan;
