@@ -111,7 +111,6 @@ public class FlashCard extends javax.swing.JPanel {
         });
 
         jButton3.setText("Sound");
-        jButton3.setActionCommand("Sound");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton3MouseClicked(evt);
@@ -139,7 +138,7 @@ public class FlashCard extends javax.swing.JPanel {
             }
         });
 
-        jButton6.setText("EXIT");
+        jButton6.setText("Main Menu");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -252,7 +251,11 @@ public class FlashCard extends javax.swing.JPanel {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        this.setVisible(false);
+       
+        PanelsContainer.changePanView(PanelsContainer.getContainer("MainMenu"));
+        
+       /// System.exit(0);
     }//GEN-LAST:event_jButton6ActionPerformed
 
 

@@ -15,7 +15,10 @@ import javax.swing.JScrollPane;
  * @author guero
  */
 public class MainFrame extends javax.swing.JFrame {
-     public MainFrame(){
+//     public MainFrame(JScrollPane scroll){
+//         initComponents();
+//     }
+    public MainFrame(){
          initComponents();
      }
 
@@ -47,15 +50,35 @@ public class MainFrame extends javax.swing.JFrame {
 
       
     }
+    public void changeView(JPanel pan){
+         JScrollPane scroll = new JScrollPane(pan);
+         scroll.setPreferredSize(new Dimension(600,500)); 
+         setContentPane(scroll);
+          setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           pack();
+            setLocationRelativeTo(null);
+             setVisible(true);
+    }
+     public void changeViewTable(JPanel pan){
+         JScrollPane scroll = new JScrollPane(pan);
+         scroll.setPreferredSize(new Dimension(1200,800)); 
+         setContentPane(scroll);
+          setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           pack();
+            setLocationRelativeTo(null);
+             setVisible(true);
+    }
+        
+        
     public void setPanel(JPanel pan){
         ///this.panel = pan;
-       //// add(panel);
+//        add(panel);
 //         JScrollPane scroll = new JScrollPane(pan);
-//        scroll.setVisible(true);
-//        setContentPane(pan);
+//        //scroll.setVisible(true);
+//        setContentPane(scroll);
 //        setSize(800, 400);
-//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        scroll.setVisible(rootPaneCheckingEnabled);
+//       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//       scroll.setVisible(rootPaneCheckingEnabled);
 //        this.setVisible(rootPaneCheckingEnabled);
 
 ///this.setContentPane(pan);
@@ -118,6 +141,7 @@ public class MainFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainFrame().setVisible(true);
+               /// new MainFrame(scroll).setVisible(true);
             }
         });
     }

@@ -121,7 +121,7 @@ MainFrame frame = new MainFrame(pan);
       ///  System.out.println("map size: "+alphaMap.size() );
         
        
-       /// JScrollPane scroll = new JScrollPane(pan);
+        //JScrollPane scroll = new JScrollPane(pan);
         ///scroll.setVisible( rootPaneCheckingEnabled);
         
         

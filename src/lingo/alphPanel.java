@@ -1019,7 +1019,7 @@ public class alphPanel extends javax.swing.JPanel {
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel49.setText("saad(ss)");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("M\nA\nI\nN\n\nM\nE\nN\nU");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -1178,9 +1178,9 @@ public class alphPanel extends javax.swing.JPanel {
                             .addContainerGap()
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(298, 298, 298))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1473,7 +1473,9 @@ public class alphPanel extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        this.setVisible(false);
+        PanelsContainer.changePanView(PanelsContainer.getContainer("MainMenu"));
+        ///System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
