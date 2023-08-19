@@ -18,6 +18,8 @@ public class MainFrame extends javax.swing.JFrame {
 //     public MainFrame(JScrollPane scroll){
 //         initComponents();
 //     }
+    private int x= 600; 
+    private int y = 500; 
     public MainFrame(){
          initComponents();
      }
@@ -37,7 +39,7 @@ public class MainFrame extends javax.swing.JFrame {
          int y  = scroll.getSize().width;
          Dimension dem =pan.getSize(); /// new Dimension(x,y);
 
-         scroll.setPreferredSize(new Dimension(600,500)); 
+         scroll.setPreferredSize(new Dimension(x,y)); 
          ///scroll.get
        /// scroll.setPreferredSize(new Dimension(1100, 800));
 //         
@@ -47,8 +49,28 @@ public class MainFrame extends javax.swing.JFrame {
         pack(); // Automatically resize the frame to fit the content
         setLocationRelativeTo(null); // Center the frame on the screen
         setVisible(true);
+        this.setResizable(false);
 
       
+    }
+    public void frameSizeSetters(int x, int y ){
+        this.x= x; 
+        this.y= y; 
+    
+    }
+//    public void ySetter(int y){
+//        this.y= y; 
+//    
+//    }
+      public void updateFramSize(JPanel pan){
+         JScrollPane scroll = new JScrollPane(pan);
+          System.err.println("x: "+ x + "y: "+y);
+         scroll.setPreferredSize(new Dimension(x,y)); 
+         setContentPane(scroll);
+          setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           pack();
+            setLocationRelativeTo(null);
+             setVisible(true);
     }
     public void changeView(JPanel pan){
          JScrollPane scroll = new JScrollPane(pan);
@@ -68,6 +90,7 @@ public class MainFrame extends javax.swing.JFrame {
             setLocationRelativeTo(null);
              setVisible(true);
     }
+     
         
         
     public void setPanel(JPanel pan){

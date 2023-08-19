@@ -19,11 +19,13 @@ public class Lingo {
     alphPanel table; 
     alphabetsController tableController; 
     FlashCard flashCards ; 
+    QuizTaker quiz; 
    /// JScrollPane scroll ;/// = new JScrollPane(pan);
         ///scroll.setVisible( rootPaneCheckingEnabled)
     
     public void displayMainMenu(){
         menu= new MainMenu(this);
+       /// menu.setSize(1000,500);
         PanelsContainer.addPanel("MainMenu", menu); 
        
        /// addPanel("menu",menu );
@@ -32,7 +34,10 @@ public class Lingo {
         ///scroll.setVisible( true);
       /// scroll.setVisible( true);
         frame = new MainFrame(menu);
+        frame.setSize(500, 500);
         PanelsContainer.setFrame(frame);
+        ///PanelsContainer.changePanView(menu);
+        ///
        
         
        
@@ -53,10 +58,20 @@ public class Lingo {
        
        /// frame.changeView(table);
        /// PanelsContainer.changePanView(table);
-        PanelsContainer.changePanViewTable(table);
+       PanelsContainer.changePanView(table);
+        ///PanelsContainer.changePanViewTable(table);
         
         
        
+    
+    }
+    public void dispalyAlphabetTest(){
+        quiz = new QuizTaker();
+        QuizPanel quizPanel = new QuizPanel(quiz);
+        
+        PanelsContainer.addPanel("quizPanel", quizPanel);
+        PanelsContainer.changePanView(quizPanel);
+        
     
     }
     

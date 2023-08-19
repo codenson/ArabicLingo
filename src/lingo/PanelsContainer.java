@@ -28,17 +28,20 @@ public class PanelsContainer {
     
     public static void setFrame(  MainFrame frames){
          frame = frames; 
+         frame.setVisible(true);
     
     }
-     public static void changePanView(JPanel pan){
-          frame.changeView(pan);
+     public static void changePanView(JPanel pan ){
+         frame.frameSizeSetters(pan.getSize().width, pan.getSize().height);
+         frame.updateFramSize(pan);
+          ///frame.changeView(pan);
      
      }
-       public static void changePanViewTable(JPanel pan){
-         /// frame.changeView(pan);
-          frame.changeViewTable(pan);
-     
-     }
+//     public static void changePanViewTable(JPanel pan){
+//         /// frame.changeView(pan);
+//          frame.changeViewTable(pan);
+//     
+//     }
     
     
 }

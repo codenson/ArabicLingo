@@ -24,7 +24,7 @@ public class alphPanel extends javax.swing.JPanel {
         this.map= map; 
         initComponents();
         intPic();
-        this.setSize(800, 400);
+        this.setSize(1200, 800);
         
     }
     
