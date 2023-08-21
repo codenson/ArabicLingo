@@ -5,7 +5,8 @@ Arabic Alphabets Java Desktop App
 
 Welcome to the Arabic Alphabets Java Desktop App! This interactive application is designed to help you learn and master the Arabic alphabets with ease. With its engaging features and user-friendly interface, you'll be on your way to becoming an Arabic alphabet pro in no time.
 App Screenshot
-![image](https://github.com/codenson/ArabicLingo/assets/113551785/2d180239-2358-4cec-a154-6ddff80ef4cd)
+![image](https://github.com/codenson/ArabicLingo/assets/113551785/d96e61ac-257c-47ff-bab8-e69eb109d4fa)
+
 
 
 
