@@ -2,10 +2,13 @@ Arabic Alphabets Java Desktop App
 App Screenshot
 
 Welcome to the Arabic Alphabets Java Desktop App! This interactive application is designed to help you learn and master the Arabic alphabets with ease. With its engaging features and user-friendly interface, you'll be on your way to becoming an Arabic alphabet pro in no time.
+
 ![image](https://github.com/codenson/ArabicLingo/assets/113551785/84cf2eab-cacf-4d14-a3f6-3ffe846d671d)
+
 Features
 Alphabet Learning with Sound and Pronunciation
 Learn the Arabic alphabet through a combination of visual and auditory cues. Each alphabet comes with a corresponding sound to help you familiarize yourself with the correct pronunciation.
+
 ![image](https://github.com/codenson/ArabicLingo/assets/113551785/7476359a-7507-41cb-84bb-8da6bc90577d)
 
 
