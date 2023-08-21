@@ -1,5 +1,6 @@
 Arabic Alphabets Java Desktop App
 App Screenshot
+
 ![image](https://github.com/codenson/ArabicLingo/assets/113551785/84cf2eab-cacf-4d14-a3f6-3ffe846d671d)
 
 
